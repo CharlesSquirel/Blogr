@@ -3,13 +3,15 @@ import styled from "styled-components";
 
 export const StyledHeader = styled.header`
   position: relative;
-  width: 100vw;
   height: 600px;
   padding: 63px 161px 155px 167px;
   border-radius: 0px 0px 0px 100px;
   background: url(${bg}) no-repeat;
   background-size: cover;
   color: var(--white);
+  @media (max-width: 800px) {
+    padding: 56px 24px;
+  }
   .nav-box {
     display: flex;
     justify-content: space-between;
@@ -79,6 +81,10 @@ export const WrapperTitle = styled.article`
   align-items: center;
   gap: 18px;
   padding-top: 130px;
+  @media (max-width: 800px) {
+    padding-top: 108px;
+  }
+
 `;
 
 export const StyledButtonWhite = styled.button`
@@ -112,16 +118,26 @@ export const Title = styled.h1`
   font-size: 64px;
   letter-spacing: -1.92px;
   text-align: center;
+  @media (max-width: 800px) {
+    font-size: 36px;
+    line-height: 55px;
+    letter-spacing: -1.08px;
+  }
 `;
 
 export const SubTitle = styled.h2`
   font-size: 20px;
+  text-align: center;
+  @media (max-width: 800px) {
+    font-size: 18px;
+    line-height: 28px;
+  }
 `;
 
 export const HamburgerIcon = styled.div`
   width: 32px;
   height: 18px;
-  cursor:pointer;
+  cursor: pointer;
   @media (min-width: 1014px) {
     display: none;
   }

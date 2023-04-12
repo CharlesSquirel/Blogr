@@ -9,12 +9,13 @@ export const GlobalStyle = createGlobalStyle`
     --footer-bg: #24242C;
     --btn-hover: #FF7B86;
     --nav-mobile: #2D2E40;
+    --sub-menu: #f3f3f3;
 }
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
 }
 body {

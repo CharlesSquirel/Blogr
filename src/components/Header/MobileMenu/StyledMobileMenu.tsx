@@ -7,8 +7,8 @@ export const StyledMobileMenu = styled.div`
   gap: 24px;
   position: absolute;
   top: 135px;
-  left: 10%;
-  width: 80%;
+  left: 5%;
+  width: 90%;
   background-color: var(--white);
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.243444);
   border-radius: 5px;
@@ -20,28 +20,13 @@ export const StyledMobileMenu = styled.div`
 `;
 
 export const MobileLinks = styled.ul`
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 28px;
-  color: var(--text-primary);
-`;
-
-export const SubMenuWrapper = styled.div`
-
-  padding: 17px 98px 25px 99px;
-  background-color: #f3f3f3;
-  border-radius: 5px;
-  width: 276px;
-  height: 150px;
-`;
-
-export const SubMenuList = styled.ul`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  width: 100%;
+  gap: 24px;
   li {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
     color: var(--text-primary);
   }
 `;
@@ -51,7 +36,8 @@ export const LoginButton = styled.p`
   font-size: 18px;
   line-height: 28px;
   color: var(--text-primary);
-`;
+
+`
 
 export const SignUpButton = styled.button`
   width: 137px;
@@ -65,6 +51,18 @@ export const SignUpButton = styled.button`
 `;
 
 export const WrapperButtons = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 80%;
+  &::after{
+    content: "";
+    position: absolute;
+    top: -10px;
+    width: 100%;
+    height: 1px;
+    background-color: var(--sub-menu);
+  }
 `;

@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import hamburger from "./icon-hamburger.svg";
+import iconClose from "./icon-close.svg";
 import angleDown from "../../images/angle-down.svg";
 import { HamburgerIcon, StyledButtonTransparent, StyledButtonWhite, StyledHeader, StyledNavDesktop, SubTitle, Title, WrapperTitle } from "./StyledHeader";
 import { useState } from "react";
@@ -8,8 +9,12 @@ import MobileMenu from "./MobileMenu/MobileMenu";
 
 function Header() {
   const [isTabletMenuActive, setIsTabletMenuActive] = useState<boolean>(false);
-  const handleClick = () => {
+  const [isMobileMenuActive, setIsMobileMenuActive] = useState<boolean>(false);
+  const handleTabletClick = () => {
     setIsTabletMenuActive(!isTabletMenuActive);
+  }
+  const handleMobileClick = () => {
+    setIsMobileMenuActive(!isMobileMenuActive);
   }
   return (
     <StyledHeader>
@@ -26,7 +31,7 @@ function Header() {
               <li>
                 Company <img className="angle" src={angleDown} alt="" />
               </li>
-              <li onClick={handleClick}>
+              <li onClick={handleTabletClick}>
                 Connect <img className="angle" src={angleDown} alt="" />
               </li>
             </ul>
@@ -41,8 +46,8 @@ function Header() {
           </p>
           <StyledButtonWhite className="btn btn-sign">Sign up</StyledButtonWhite>
         </div>
-        <HamburgerIcon>
-          <img src={hamburger} alt="" />
+        <HamburgerIcon onClick={handleMobileClick}>
+          <img src={isMobileMenuActive ? iconClose : hamburger} alt="" />
         </HamburgerIcon>
       </div>
       <WrapperTitle>
@@ -53,7 +58,7 @@ function Header() {
           <StyledButtonTransparent className="btn btn-learn">Learn More</StyledButtonTransparent>
         </div>
       </WrapperTitle>
-      <MobileMenu/>
+      {isMobileMenuActive && <MobileMenu/>}
     </StyledHeader>
   );
 }
