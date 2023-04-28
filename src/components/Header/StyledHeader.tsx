@@ -18,10 +18,6 @@ export const StyledHeader = styled.header`
     align-items: center;
     max-height: 40px;
   }
-  .logo {
-    width: 101px;
-    height: 40px;
-  }
   .login-box {
     display: flex;
     align-items: center;
@@ -45,6 +41,11 @@ export const StyledHeader = styled.header`
     gap: 64px;
   }
 `;
+
+export const StyledLogo = styled.div`
+      width: 101px;
+    height: 40px;
+`
 
 export const StyledNavDesktop = styled.nav`
   position: relative;

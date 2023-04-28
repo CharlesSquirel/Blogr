@@ -2,7 +2,7 @@ import logo from "./logo.svg";
 import hamburger from "./icon-hamburger.svg";
 import iconClose from "./icon-close.svg";
 import angleDown from "../../images/angle-down.svg";
-import { HamburgerIcon, StyledButtonTransparent, StyledButtonWhite, StyledHeader, StyledNavDesktop, SubTitle, Title, WrapperTitle } from "./StyledHeader";
+import { HamburgerIcon, StyledButtonTransparent, StyledButtonWhite, StyledHeader, StyledLogo, StyledNavDesktop, SubTitle, Title, WrapperTitle } from "./StyledHeader";
 import { useState } from "react";
 import TabletMenu from "./TabletMenu/TabletMenu";
 import MobileMenu from "./MobileMenu/MobileMenu";
@@ -20,9 +20,9 @@ function Header() {
     <StyledHeader>
       <div className="nav-box">
         <div className="flex-row">
-          <div className="logo">
+          <StyledLogo>
             <img src={logo} alt="logo" />
-          </div>
+          </StyledLogo>
           <StyledNavDesktop>
             <ul className="nav-desktop-links">
               <li>

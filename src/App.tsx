@@ -5,6 +5,7 @@ import { ThemeProvider } from "styled-components";
 import { theme } from "./components/GlobalStyle/theme";
 import Phones from "./components/Phones/Phones";
 import Laptop from "./components/Laptop/Laptop";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Designed />
         <Phones />
         <Laptop/>
+        <Footer/>
       </ThemeProvider>
     </>
   );

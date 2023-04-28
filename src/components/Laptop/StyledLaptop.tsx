@@ -5,6 +5,7 @@ export const StyledLaptop = styled.section`
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin-bottom: 123px;
   @media (${({ theme }) => theme.breakpoints.tabletDesign}) {
     flex-direction: column;
     align-items: center;
