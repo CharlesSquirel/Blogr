@@ -43,8 +43,8 @@ export const StyledHeader = styled.header`
 `;
 
 export const StyledLogo = styled.div`
-      width: 101px;
-    height: 40px;
+  width: 101px;
+  height: 40px;
 `
 
 export const StyledNavDesktop = styled.nav`
