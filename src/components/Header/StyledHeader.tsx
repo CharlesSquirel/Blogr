@@ -12,80 +12,69 @@ export const StyledHeader = styled.header`
   @media (max-width: 800px) {
     padding: 56px 24px;
   }
-  .nav-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-height: 40px;
-  }
-  .login-box {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-    @media (max-width: 1014px) {
-      display: none;
-    }
-  }
-  .btn-row {
-    display: flex;
-    gap: 16px;
-  }
-  .btn-login {
-    font-weight: 700;
-    line-height: 18px;
-    font-family: "Ubuntu", sans-serif;
-  }
-  .flex-row {
-    display: flex;
-    align-items: center;
-    gap: 64px;
-  }
+`;
+
+export const StyledNavContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 40px;
+`;
+
+export const FlexRow = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 64px;
 `;
 
 export const StyledLogo = styled.div`
   width: 101px;
   height: 40px;
-`
+`;
 
 export const StyledNavDesktop = styled.nav`
   position: relative;
   @media (max-width: 1014px) {
     display: none;
   }
-  .nav-desktop-links {
+`;
+
+export const StyledNavDesktopList = styled.ul`
+  display: flex;
+  gap: 32px;
+  & li {
     display: flex;
-    gap: 32px;
-    & li {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-family: "Ubuntu", sans-serif;
-      font-weight: 700;
-      line-height: 18px;
-      opacity: 0.75;
-      transition: all 0.2s ease-in-out;
-      &:hover {
-        opacity: 1;
-      }
+    align-items: center;
+    gap: 8px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    line-height: 18px;
+    opacity: 0.75;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      opacity: 1;
     }
-  }
-  .angle {
-    width: 8px;
-    height: 4px;
-    color: var(--white);
   }
 `;
 
-export const WrapperTitle = styled.article`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 18px;
-  padding-top: 130px;
-  @media (max-width: 800px) {
-    padding-top: 108px;
-  }
+export const StyledAngle = styled.img`
+  width: 8px;
+  height: 4px;
+  color: var(--white);
+`;
 
+export const StyledLoginBox = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  a {
+    font-weight: 700;
+    line-height: 18px;
+    font-family: "Ubuntu", sans-serif;
+  }
+  @media (max-width: 1014px) {
+    display: none;
+  }
 `;
 
 export const StyledButtonWhite = styled.button`
@@ -103,14 +92,23 @@ export const StyledButtonWhite = styled.button`
   }
 `;
 
-export const StyledButtonTransparent = styled(StyledButtonWhite)`
-  color: var(--white);
-  background: transparent;
-  border: 1px solid var(--white);
-  transition: all 0.3s ease-in-out;
-  &:hover {
-    background: var(--white);
-    color: var(--btn-hover);
+export const HamburgerIcon = styled.div`
+  width: 32px;
+  height: 18px;
+  cursor: pointer;
+  @media (min-width: 1014px) {
+    display: none;
+  }
+`;
+
+export const WrapperTitle = styled.article`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding-top: 130px;
+  @media (max-width: 800px) {
+    padding-top: 108px;
   }
 `;
 
@@ -135,11 +133,18 @@ export const SubTitle = styled.h2`
   }
 `;
 
-export const HamburgerIcon = styled.div`
-  width: 32px;
-  height: 18px;
-  cursor: pointer;
-  @media (min-width: 1014px) {
-    display: none;
+export const StyledButtonTransparent = styled(StyledButtonWhite)`
+  color: var(--white);
+  background: transparent;
+  border: 1px solid var(--white);
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background: var(--white);
+    color: var(--btn-hover);
   }
+`;
+
+export const StyledButtonBox = styled.div`
+  display: flex;
+  gap: 16px;
 `;

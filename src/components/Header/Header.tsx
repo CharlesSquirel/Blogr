@@ -2,8 +2,24 @@ import logo from "./logo.svg";
 import hamburger from "./icon-hamburger.svg";
 import iconClose from "./icon-close.svg";
 import angleDown from "../../images/angle-down.svg";
-import { HamburgerIcon, StyledButtonTransparent, StyledButtonWhite, StyledHeader, StyledLogo, StyledNavDesktop, SubTitle, Title, WrapperTitle } from "./StyledHeader";
 import { useState } from "react";
+import {
+  HamburgerIcon,
+  StyledButtonTransparent,
+  StyledButtonWhite,
+  StyledHeader,
+  StyledLogo,
+  StyledNavDesktop,
+  SubTitle,
+  Title,
+  WrapperTitle,
+  StyledNavContainer,
+  FlexRow,
+  StyledNavDesktopList,
+  StyledAngle,
+  StyledLoginBox,
+  StyledButtonBox,
+} from "./StyledHeader";
 import TabletMenu from "./TabletMenu/TabletMenu";
 import MobileMenu from "./MobileMenu/MobileMenu";
 
@@ -12,53 +28,51 @@ function Header() {
   const [isMobileMenuActive, setIsMobileMenuActive] = useState<boolean>(false);
   const handleTabletClick = () => {
     setIsTabletMenuActive(!isTabletMenuActive);
-  }
+  };
   const handleMobileClick = () => {
     setIsMobileMenuActive(!isMobileMenuActive);
-  }
+  };
   return (
     <StyledHeader>
-      <div className="nav-box">
-        <div className="flex-row">
+      <StyledNavContainer>
+        <FlexRow>
           <StyledLogo>
             <img src={logo} alt="logo" />
           </StyledLogo>
           <StyledNavDesktop>
-            <ul className="nav-desktop-links">
+            <StyledNavDesktopList>
               <li>
-                Product <img className="angle" src={angleDown} alt="" />
+                Product <StyledAngle src={angleDown} alt="" />
               </li>
               <li>
-                Company <img className="angle" src={angleDown} alt="" />
+                Company <StyledAngle src={angleDown} alt="" />
               </li>
               <li onClick={handleTabletClick}>
-                Connect <img className="angle" src={angleDown} alt="" />
+                Connect <StyledAngle src={angleDown} alt="" />
               </li>
-            </ul>
-            {isTabletMenuActive && <TabletMenu/>}
+            </StyledNavDesktopList>
+            {isTabletMenuActive && <TabletMenu />}
           </StyledNavDesktop>
-        </div>
-        <div className="login-box">
+        </FlexRow>
+        <StyledLoginBox>
           <p>
-            <a className="btn-login" href="#">
-              Login
-            </a>
+            <a href="#">Login</a>
           </p>
-          <StyledButtonWhite className="btn btn-sign">Sign up</StyledButtonWhite>
-        </div>
+          <StyledButtonWhite>Sign up</StyledButtonWhite>
+        </StyledLoginBox>
         <HamburgerIcon onClick={handleMobileClick}>
           <img src={isMobileMenuActive ? iconClose : hamburger} alt="" />
         </HamburgerIcon>
-      </div>
+      </StyledNavContainer>
       <WrapperTitle>
         <Title>A modern publishing platform</Title>
         <SubTitle>Grow your audience and build your online brand</SubTitle>
-        <div className="btn-row">
-          <StyledButtonWhite className="btn btn-start">Start for Free</StyledButtonWhite>
-          <StyledButtonTransparent className="btn btn-learn">Learn More</StyledButtonTransparent>
-        </div>
+        <StyledButtonBox>
+          <StyledButtonWhite>Start for Free</StyledButtonWhite>
+          <StyledButtonTransparent>Learn More</StyledButtonTransparent>
+        </StyledButtonBox>
       </WrapperTitle>
-      {isMobileMenuActive && <MobileMenu/>}
+      {isMobileMenuActive && <MobileMenu />}
     </StyledHeader>
   );
 }
