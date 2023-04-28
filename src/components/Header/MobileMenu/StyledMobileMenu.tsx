@@ -13,10 +13,11 @@ export const StyledMobileMenu = styled.div`
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.243444);
   border-radius: 5px;
   padding: 24px;
-  .angle {
-    width: 8px;
-    height: 4px;
-  }
+`;
+
+export const StyledAngle = styled.img`
+  width: 8px;
+  height: 4px;
 `;
 
 export const MobileLinks = styled.ul`
@@ -39,8 +40,11 @@ export const LoginButton = styled.p`
   font-size: 18px;
   line-height: 28px;
   color: var(--text-primary);
-
-`
+  a {
+    line-height: 18px;
+    font-family: "Ubuntu", sans-serif;
+  }
+`;
 
 export const SignUpButton = styled.button`
   width: 137px;
@@ -60,7 +64,7 @@ export const WrapperButtons = styled.div`
   align-items: center;
   gap: 24px;
   width: 80%;
-  &::after{
+  &::after {
     content: "";
     position: absolute;
     top: -10px;

@@ -1,32 +1,30 @@
 import angleDown from "./angle-down copy.svg";
 import angleUp from "./angle-up.svg";
 import MobileSubMenu from "./MobileSubMenu";
-import { LoginButton, MobileLinks, SignUpButton, StyledMobileMenu, WrapperButtons } from "./StyledMobileMenu";
+import { LoginButton, MobileLinks, SignUpButton, StyledMobileMenu, WrapperButtons, StyledAngle } from "./StyledMobileMenu";
 import { useState } from "react";
 function MobileMenu() {
   const [isSubMenuActive, setIsSubMenuActive] = useState<boolean>(false);
   const handleClick = () => {
     setIsSubMenuActive(!isSubMenuActive);
-  }
+  };
   return (
     <StyledMobileMenu>
       <MobileLinks>
         <li>
-          Product <img className="angle" src={angleDown} alt="" />
+          Product <StyledAngle src={angleDown} alt="" />
         </li>
         <li>
-          Company <img className="angle" src={angleDown} alt="" />
+          Company <StyledAngle src={angleDown} alt="" />
         </li>
         <li onClick={handleClick}>
-          Connect <img className="angle" src={isSubMenuActive && angleUp || angleDown} alt="" />
+          Connect <StyledAngle src={(isSubMenuActive && angleUp) || angleDown} alt="" />
         </li>
       </MobileLinks>
       {isSubMenuActive && <MobileSubMenu />}
       <WrapperButtons>
         <LoginButton>
-          <a className="btn-login" href="#">
-            Login
-          </a>
+          <a href="#">Login</a>
         </LoginButton>
         <SignUpButton>Sign up</SignUpButton>
       </WrapperButtons>
