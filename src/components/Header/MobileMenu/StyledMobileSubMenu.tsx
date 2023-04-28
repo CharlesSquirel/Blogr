@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const SubMenuWrapper = styled.div`
-  padding: 17px 98px 25px 99px;
-  background-color: var(--sub-menu);
-  border-radius: 5px;
   width: 80%;
   height: 150px;
+  padding: 17px 98px 25px 99px;
+  border-radius: 5px;
+  background-color: var(--sub-menu);
 `;
 
 export const SubMenuList = styled.ul`
@@ -16,8 +16,8 @@ export const SubMenuList = styled.ul`
   height: 100%;
   width: 100%;
   li {
-    color: var(--text-primary);
     font-weight: 600;
+    color: var(--text-primary);
     line-height: 28px;
   }
 `;

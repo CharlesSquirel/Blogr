@@ -5,27 +5,25 @@ export const StyledPhones = styled.section`
   justify-content: center;
   gap: 98px;
   height: 400px;
-  background: linear-gradient(135deg, #2d2e40 0%, #3f4164 100%);
-  border-radius: 0px 100px;
-  padding: 0 165px;
   margin-bottom: 116px;
+  padding: 0 165px;
+  border-radius: 0px 100px;
+  background: linear-gradient(135deg, #2d2e40 0%, #3f4164 100%);
   @media (${({ theme }) => theme.breakpoints.tabletDesign}) {
     flex-direction: column;
     align-items: center;
     gap: 0;
-    margin-top: 600px;
     height: 625px;
     width: 100%;
+    margin-top: 600px;
     padding: 0;
-  }
-  @media (min-width: ${({ theme }) => theme.breakpoints.hugeScreens}) {
   }
 `;
 
 export const StyledImg = styled.div`
+  position: relative;
   width: 472px;
   height: 499px;
-  position: relative;
   @media (min-width: ${({ theme }) => theme.breakpoints.hugeScreens}) {
     width: 772px;
     height: 799px;

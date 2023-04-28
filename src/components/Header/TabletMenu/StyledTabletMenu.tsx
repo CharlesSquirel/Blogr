@@ -6,10 +6,10 @@ export const StyledTabletMenu = styled.div`
   top: 34px;
   width: 168px;
   height: 147px;
+  padding: 24px;
+  border-radius: 5px;
   background-color: var(--white);
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.243444);
-  border-radius: 5px;
-  padding: 24px;
 `;
 
 export const LinkList = styled.ul`
@@ -18,10 +18,10 @@ export const LinkList = styled.ul`
 `;
 
 export const Link = styled.li`
-  color: var(--nav-mobile);
-  font-size: 15px;
-  line-height: 33px;
   font-family: "Ubuntu", sans-serif;
+  font-size: 15px;
+  color: var(--nav-mobile);
+  line-height: 33px;
   &:hover {
     font-weight: 700;
   }

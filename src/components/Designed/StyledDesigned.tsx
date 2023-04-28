@@ -3,31 +3,31 @@ import styled from "styled-components";
 export const StyledDesigned = styled.section`
   display: flex;
   flex-direction: column;
-  position: relative;
-  color: var(--text-primary);
-  margin-top: 190px;
   gap: 90px;
+  position: relative;
   width: 100%;
   height: 882px;
+  margin-top: 190px;
+  color: var(--text-primary);
   @media (${({theme}) => theme.breakpoints.tabletDesign}){
+    align-items: center;
     gap: 780px;
     margin-top: 100px;
-    align-items: center;
   }
   @media (max-width: ${({theme}) => theme.breakpoints.maxMobileDesign}) {
-    margin-top: 100px;
-    gap: 410px;
-    height: 1086px;
     align-items: center;
+    gap: 410px;
+    margin-top: 100px;
+    height: 1086px;
   }
 `;
 
 export const StyledTitle = styled.h2`
   font-size: 64px;
+  font-weight: 600;
   line-height: 61px;
   text-align: center;
   letter-spacing: -1.2px;
-  font-weight: 600;
   @media (${({theme}) => theme.breakpoints.tabletDesign}){
     font-size: 50px;
   }
@@ -59,8 +59,8 @@ export const StyledDesignedTextBox = styled.div`
 
 export const StyledSubTitle = styled.h3`
   font-size: 35px;
-  line-height: 28px;
   font-weight: 600;
+  line-height: 28px;
   @media (max-width: ${({theme}) => theme.breakpoints.maxMobileDesign}) {
     font-size: 28px;
     line-height: 32px;
@@ -69,22 +69,22 @@ export const StyledSubTitle = styled.h3`
 
 export const StyledDesc = styled.p`
   font-weight: 400;
-  line-height: 28px;
   color: var(--text-secondary);
+  line-height: 28px;
   letter-spacing: 0.5px;
 `;
 
 export const StyledFlexRow = styled.div`
   display: flex;
-  padding-left: 160px;
   justify-content: space-between;
   gap: 125px;
+  padding-left: 160px;
   @media (${({theme}) => theme.breakpoints.tabletDesign}){
     padding-left: 0;
   }
   @media (max-width: ${({theme}) => theme.breakpoints.maxMobileDesign}) {
-    padding-left: 0;
     gap: 0;
+    padding-left: 0;
   }
 `;
 
@@ -95,19 +95,19 @@ export const StyledBackgroundImg = styled.div`
   width: 880px;
   height: 882px;
   @media (${({theme}) => theme.breakpoints.tabletDesign}){
+    left: 50%;
+    transform: translateX(-50%);
+    right: 0;
+    top: 8%;
     width: 700px;
     height: 700px;
-    left: 50%;
-    transform: translateX(-50%);
-    right: 0;
-    top: 8%;
   }
   @media (max-width: 800px) {
-    width: 326px;
-    height: 326px;
     right: 0;
     left: 50%;
     top: 8%;
     transform: translateX(-50%);
+    width: 326px;
+    height: 326px;
   }
 `;

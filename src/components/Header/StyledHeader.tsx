@@ -69,8 +69,8 @@ export const StyledLoginBox = styled.div`
   gap: 32px;
   a {
     font-weight: 700;
-    line-height: 18px;
     font-family: "Ubuntu", sans-serif;
+    line-height: 18px;
   }
   @media (max-width: 1014px) {
     display: none;
@@ -134,9 +134,9 @@ export const SubTitle = styled.h2`
 `;
 
 export const StyledButtonTransparent = styled(StyledButtonWhite)`
-  color: var(--white);
-  background: transparent;
   border: 1px solid var(--white);
+  background: transparent;
+  color: var(--white);
   transition: all 0.3s ease-in-out;
   &:hover {
     background: var(--white);

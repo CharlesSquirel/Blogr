@@ -4,16 +4,15 @@ import styled from "styled-components";
 export const StyledFooter = styled.footer`
   display: flex;
   justify-content: space-between;
-  font-family: "Ubuntu", sans-serif;
-  border-radius: 0px 100px 0px 0px;
-  /* gap: 185px; */
   padding: 70px 167px;
+  border-radius: 0px 100px 0px 0px;
   background-color: var(--footer-bg);
+  font-family: "Ubuntu", sans-serif;
   @media (max-width: ${({ theme }) => theme.breakpoints.maxMobileFooter}) {
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     gap: 72px;
-    justify-content: flex-start;
   }
 `;
 
@@ -30,18 +29,16 @@ export const StyledList = styled.div`
   display: flex;
   flex-direction: column;
   gap: 21px;
-  color: var(--white);
   font-weight: 500;
-
+  color: var(--white);
   li {
-    opacity: 0.75;
     font-weight: 400;
     font-size: 15px;
     line-height: 33px;
-
+    opacity: 0.75;
     :hover {
-      opacity: 1;
       text-decoration: underline;
+      opacity: 1;
     }
     @media (max-width: ${({ theme }) => theme.breakpoints.maxMobileFooter}) {
       text-align: center;
