@@ -4,6 +4,7 @@ import Designed from "./components/Designed/Designed";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./components/GlobalStyle/theme";
 import Phones from "./components/Phones/Phones";
+import Laptop from "./components/Laptop/Laptop";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Header />
         <Designed />
         <Phones />
+        <Laptop/>
       </ThemeProvider>
     </>
   );

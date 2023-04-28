@@ -8,6 +8,7 @@ export const StyledPhones = styled.section`
   background: linear-gradient(135deg, #2d2e40 0%, #3f4164 100%);
   border-radius: 0px 100px;
   padding: 0 165px;
+  margin-bottom: 116px;
   @media (${({ theme }) => theme.breakpoints.tabletDesign}) {
     flex-direction: column;
     align-items: center;
