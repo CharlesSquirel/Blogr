@@ -1,10 +1,10 @@
 ✔ blogr żeby się ruszał w lewo @RWD @low @done (30.03.2023, 11:16:26)
-☐ posprawdzać czy wszedzie sa czcionki @low 
+✔ posprawdzać czy wszedzie sa czcionki @low @done (28.04.2023, 17:28:05)
 ☐ poskracać MQ do jednego/ zwiększyć zmienne breakpointy w theme/ zróżnicować
 ☐ RWD do Phones dla mobile @low
 ☐ coś się dzieje z iconami hamburgera i close @low
 ☐ wyrównać mobile menu li @low
 ☐ poprawić lokalizacje plików, zlikwidować powtórzenia img @low
 ✔ poprawic styledheader na oddzielne komponenty stylowe @low @done (28.04.2023, 16:57:11)
-☐ poprawić kolejność properties w css @low
+✔ poprawić kolejność properties w css @low @done (28.04.2023, 17:28:01)
 ✔ strzałka do góry przy mobile menu i wyrownanie jej z tekstem @done (28.04.2023, 16:37:21)
