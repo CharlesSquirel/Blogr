@@ -2,7 +2,7 @@ import { StyledSubTitle, StyledDesc, StyledDesignedTextBox, StyledDesignedTextWr
 import { StyledLaptop, StyledImg } from "./StyledLaptop";
 import laptop from "./illustration-laptop-desktop.svg";
 
-function Laptop() {
+const Laptop: React.FC = () => {
   return (
     <StyledLaptop>
       <StyledImg>

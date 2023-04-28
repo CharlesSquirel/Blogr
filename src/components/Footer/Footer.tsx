@@ -3,7 +3,7 @@ import logo from "./logo.svg";
 
 import { StyledFooter, StyledFooterNav, StyledList } from "./StyledFooter";
 
-function Footer() {
+const Footer: React.FC = () => {
   return (
     <StyledFooter>
       <StyledLogo>

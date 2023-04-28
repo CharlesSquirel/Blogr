@@ -23,7 +23,7 @@ import {
 import TabletMenu from "./TabletMenu/TabletMenu";
 import MobileMenu from "./MobileMenu/MobileMenu";
 
-function Header() {
+const Header: React.FC = () => {
   const [isTabletMenuActive, setIsTabletMenuActive] = useState<boolean>(false);
   const [isMobileMenuActive, setIsMobileMenuActive] = useState<boolean>(false);
   const handleTabletClick = () => {
@@ -75,6 +75,6 @@ function Header() {
       {isMobileMenuActive && <MobileMenu />}
     </StyledHeader>
   );
-}
+};
 
 export default Header;

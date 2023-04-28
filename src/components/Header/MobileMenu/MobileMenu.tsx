@@ -3,7 +3,7 @@ import angleUp from "./angle-up.svg";
 import MobileSubMenu from "./MobileSubMenu";
 import { LoginButton, MobileLinks, SignUpButton, StyledMobileMenu, WrapperButtons, StyledAngle } from "./StyledMobileMenu";
 import { useState } from "react";
-function MobileMenu() {
+const MobileMenu: React.FC = () => {
   const [isSubMenuActive, setIsSubMenuActive] = useState<boolean>(false);
   const handleClick = () => {
     setIsSubMenuActive(!isSubMenuActive);

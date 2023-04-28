@@ -1,6 +1,6 @@
 import { Link, LinkList, StyledTabletMenu } from "./StyledTabletMenu";
 
-function TabletMenu() {
+const TabletMenu: React.FC = () => {
   return (
     <StyledTabletMenu>
       <LinkList>

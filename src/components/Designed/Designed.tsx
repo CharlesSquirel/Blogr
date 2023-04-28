@@ -2,7 +2,7 @@ import Img from "./illustration-editor-desktop.svg";
 
 import { StyledDesigned, StyledTitle, StyledDesignedTextWrapper, StyledDesignedTextBox, StyledSubTitle, StyledDesc, StyledFlexRow, StyledBackgroundImg } from "./StyledDesigned";
 
-function Designed() {
+const Designed: React.FC = () => {
   return (
     <StyledDesigned>
       <StyledTitle>Designed for the future</StyledTitle>

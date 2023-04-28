@@ -1,5 +1,5 @@
 import { SubMenuWrapper, SubMenuList } from "./StyledMobileSubMenu";
-function MobileSubMenu() {
+const MobileSubMenu: React.FC = () => {
   return (
     <SubMenuWrapper>
       <SubMenuList>
