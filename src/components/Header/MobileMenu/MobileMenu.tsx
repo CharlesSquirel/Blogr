@@ -1,4 +1,5 @@
 import angleDown from "./angle-down copy.svg";
+import angleUp from "./angle-up.svg";
 import MobileSubMenu from "./MobileSubMenu";
 import { LoginButton, MobileLinks, SignUpButton, StyledMobileMenu, WrapperButtons } from "./StyledMobileMenu";
 import { useState } from "react";
@@ -17,7 +18,7 @@ function MobileMenu() {
           Company <img className="angle" src={angleDown} alt="" />
         </li>
         <li onClick={handleClick}>
-          Connect <img className="angle" src={angleDown} alt="" />
+          Connect <img className="angle" src={isSubMenuActive && angleUp || angleDown} alt="" />
         </li>
       </MobileLinks>
       {isSubMenuActive && <MobileSubMenu />}

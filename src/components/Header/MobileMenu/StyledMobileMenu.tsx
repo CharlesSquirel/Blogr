@@ -24,6 +24,9 @@ export const MobileLinks = styled.ul`
   flex-direction: column;
   gap: 24px;
   li {
+    display: flex;
+    align-items: center;
+    gap: 3px;
     font-weight: 600;
     font-size: 18px;
     line-height: 28px;
