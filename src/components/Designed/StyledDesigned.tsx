@@ -9,13 +9,14 @@ export const StyledDesigned = styled.section`
   height: 882px;
   margin-top: 190px;
   color: var(--text-primary);
-  @media (${({theme}) => theme.breakpoints.tabletDesign}){
+  @media (max-width: ${({ theme }) => theme.breakpoints.maxMobileTablet}) {
     align-items: center;
+  }
+  @media (${({ theme }) => theme.breakpoints.tabletDesign}) {
     gap: 780px;
     margin-top: 100px;
   }
-  @media (max-width: ${({theme}) => theme.breakpoints.maxMobileDesign}) {
-    align-items: center;
+  @media (max-width: ${({ theme }) => theme.breakpoints.maxMobileDesign}) {
     gap: 410px;
     margin-top: 100px;
     height: 1086px;
@@ -28,10 +29,10 @@ export const StyledTitle = styled.h2`
   line-height: 61px;
   text-align: center;
   letter-spacing: -1.2px;
-  @media (${({theme}) => theme.breakpoints.tabletDesign}){
+  @media (${({ theme }) => theme.breakpoints.tabletDesign}) {
     font-size: 50px;
   }
-  @media (max-width: ${({theme}) => theme.breakpoints.maxMobileDesign}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.maxMobileDesign}) {
     font-size: 28px;
     line-height: 43px;
     letter-spacing: -0.84px;
@@ -42,7 +43,7 @@ export const StyledDesignedTextWrapper = styled.article`
   display: flex;
   flex-direction: column;
   gap: 64px;
-  @media (max-width: ${({theme}) => theme.breakpoints.maxMobileDesign}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.maxMobileDesign}) {
     gap: 40px;
   }
 `;
@@ -52,8 +53,11 @@ export const StyledDesignedTextBox = styled.div`
   flex-direction: column;
   gap: 16px;
   max-width: 540px;
-  @media (max-width: ${({theme}) => theme.breakpoints.maxMobileDesign}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.maxMobileDesign}) {
     max-width: 318px;
+  }
+  @media (max-width: ${({ theme }) => theme.breakpoints.maxMobileTablet}) {
+    text-align: center;
   }
 `;
 
@@ -61,7 +65,7 @@ export const StyledSubTitle = styled.h3`
   font-size: 35px;
   font-weight: 600;
   line-height: 28px;
-  @media (max-width: ${({theme}) => theme.breakpoints.maxMobileDesign}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.maxMobileDesign}) {
     font-size: 28px;
     line-height: 32px;
   }
@@ -79,12 +83,11 @@ export const StyledFlexRow = styled.div`
   justify-content: space-between;
   gap: 125px;
   padding-left: 160px;
-  @media (${({theme}) => theme.breakpoints.tabletDesign}){
+  @media (max-width: ${({ theme }) => theme.breakpoints.maxMobileTablet}) {
     padding-left: 0;
   }
-  @media (max-width: ${({theme}) => theme.breakpoints.maxMobileDesign}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.maxMobileDesign}) {
     gap: 0;
-    padding-left: 0;
   }
 `;
 
@@ -94,19 +97,17 @@ export const StyledBackgroundImg = styled.div`
   right: -12%;
   width: 880px;
   height: 882px;
-  @media (${({theme}) => theme.breakpoints.tabletDesign}){
+  @media (max-width: ${({ theme }) => theme.breakpoints.maxMobileTablet}) {
     left: 50%;
-    transform: translateX(-50%);
     right: 0;
     top: 8%;
+    transform: translateX(-50%);
+  }
+  @media (${({ theme }) => theme.breakpoints.tabletDesign}) {
     width: 700px;
     height: 700px;
   }
-  @media (max-width: 800px) {
-    right: 0;
-    left: 50%;
-    top: 8%;
-    transform: translateX(-50%);
+  @media (max-width: ${({ theme }) => theme.breakpoints.maxMobileDesign}) {
     width: 326px;
     height: 326px;
   }

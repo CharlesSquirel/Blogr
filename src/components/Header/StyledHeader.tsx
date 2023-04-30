@@ -9,7 +9,7 @@ export const StyledHeader = styled.header`
   background: url(${bg}) no-repeat;
   background-size: cover;
   color: var(--white);
-  @media (max-width: 800px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.maxMobileDesign}) {
     padding: 56px 24px;
   }
 `;
@@ -34,7 +34,7 @@ export const StyledLogo = styled.div`
 
 export const StyledNavDesktop = styled.nav`
   position: relative;
-  @media (max-width: 1014px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.maxMobileHeader}) {
     display: none;
   }
 `;
@@ -72,7 +72,7 @@ export const StyledLoginBox = styled.div`
     font-family: "Ubuntu", sans-serif;
     line-height: 18px;
   }
-  @media (max-width: 1014px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.maxMobileHeader}) {
     display: none;
   }
 `;
@@ -96,7 +96,7 @@ export const HamburgerIcon = styled.div`
   width: 32px;
   height: 18px;
   cursor: pointer;
-  @media (min-width: 1014px) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.maxMobileHeader}) {
     display: none;
   }
 `;
@@ -107,7 +107,7 @@ export const WrapperTitle = styled.article`
   align-items: center;
   gap: 18px;
   padding-top: 130px;
-  @media (max-width: 800px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.maxMobileDesign}) {
     padding-top: 108px;
   }
 `;
@@ -117,7 +117,7 @@ export const Title = styled.h1`
   font-size: 64px;
   letter-spacing: -1.92px;
   text-align: center;
-  @media (max-width: 800px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.maxMobileDesign}) {
     font-size: 36px;
     line-height: 55px;
     letter-spacing: -1.08px;
@@ -127,7 +127,7 @@ export const Title = styled.h1`
 export const SubTitle = styled.h2`
   font-size: 20px;
   text-align: center;
-  @media (max-width: 800px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.maxMobileDesign}) {
     font-size: 18px;
     line-height: 28px;
   }

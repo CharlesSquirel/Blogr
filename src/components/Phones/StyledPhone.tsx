@@ -12,10 +12,13 @@ export const StyledPhones = styled.section`
   @media (min-width: ${({ theme }) => theme.breakpoints.hugeScreens}) {
     margin-bottom: 400px;
   }
-  @media (${({ theme }) => theme.breakpoints.tabletDesign}) {
-    position: relative;
+  @media (max-width: ${({ theme }) => theme.breakpoints.maxMobileTablet}) {
     flex-direction: column;
     align-items: center;
+    position: relative;
+  }
+  @media (${({ theme }) => theme.breakpoints.tabletDesign}) {
+    position: relative;
     gap: 0;
     width: 100%;
     height: 490px;
@@ -23,8 +26,6 @@ export const StyledPhones = styled.section`
     padding: 0;
   }
   @media (max-width: ${({ theme }) => theme.breakpoints.maxMobileDesign}) {
-    flex-direction: column;
-    align-items: center;
     position: relative;
     gap: 46px;
     height: 625px;
@@ -41,21 +42,19 @@ export const StyledImg = styled.div`
     width: 772px;
     height: 799px;
   }
-  @media (${({ theme }) => theme.breakpoints.tabletDesign}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.maxMobileTablet}) {
     position: absolute;
-    top: -42px;
     right: 50%;
     left: 50%;
     transform: translateX(-50%);
+  }
+  @media (${({ theme }) => theme.breakpoints.tabletDesign}) {
+    top: -42px;
     width: 328px;
     height: 347px;
   }
   @media (max-width: ${({ theme }) => theme.breakpoints.maxMobileDesign}) {
-    position: absolute;
     top: 0;
-    right: 50%;
-    left: 50%;
-    transform: translateX(-50%);
     height: 347px;
     width: 328px;
   }
@@ -107,10 +106,7 @@ export const StyledDescription = styled.p`
   font-size: 16px;
   line-height: 28px;
   letter-spacing: 0.5px;
-  @media (${({ theme }) => theme.breakpoints.tabletDesign}) {
-    text-align: center;
-  }
-  @media (max-width: ${({ theme }) => theme.breakpoints.maxMobileDesign}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.maxMobileTablet}) {
     text-align: center;
   }
 `;

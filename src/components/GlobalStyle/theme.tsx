@@ -3,6 +3,8 @@ interface ThemeProps {
   tabletDesign: string;
   hugeScreens: string;
   maxMobileFooter: string;
+  maxMobileTablet: string;
+  maxMobileHeader: string;
 }
 
 interface BreakProps {
@@ -15,5 +17,7 @@ export const theme: BreakProps = {
     tabletDesign: "801px <= width <= 1400px",
     hugeScreens: "2000px",
     maxMobileFooter: "1070px",
+    maxMobileTablet: "1400px",
+    maxMobileHeader: "1014px",
   },
 };
