@@ -4,8 +4,9 @@
 ✔ RWD do Phones dla mobile @low @done (29.04.2023, 14:38:15)
 ✔ coś się dzieje z iconami hamburgera i close @low @done (30.04.2023, 12:11:50)
 ✔ wyrównać mobile menu li @low @done (30.04.2023, 12:11:45)
-☐ poprawić lokalizacje plików, zlikwidować powtórzenia img @low
+✔ poprawić lokalizacje plików, zlikwidować powtórzenia img @low @done (6.05.2023, 14:54:25)
 ✔ poprawic styledheader na oddzielne komponenty stylowe @low @done (28.04.2023, 16:57:11)
 ✔ poprawić kolejność properties w css @low @done (28.04.2023, 17:28:01)
 ✔ strzałka do góry przy mobile menu i wyrownanie jej z tekstem @done (28.04.2023, 16:37:21)
-☐ px to em
+✔ order in imports @done (6.05.2023, 15:07:50)
+✔ readme file write @done (6.05.2023, 15:16:08)

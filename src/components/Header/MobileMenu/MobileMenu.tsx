@@ -1,8 +1,8 @@
-import angleDown from "./angle-down copy.svg";
-import angleUp from "./angle-up.svg";
+import { useState } from "react";
 import MobileSubMenu from "./MobileSubMenu";
 import { LoginButton, MobileLinks, SignUpButton, StyledMobileMenu, WrapperButtons, StyledAngle } from "./StyledMobileMenu";
-import { useState } from "react";
+import angleDown from "../../../images/angle-down copy.svg";
+import angleUp from "../../../images/angle-up.svg";
 const MobileMenu: React.FC = () => {
   const [isSubMenuActive, setIsSubMenuActive] = useState<boolean>(false);
   const handleClick = () => {
@@ -30,6 +30,6 @@ const MobileMenu: React.FC = () => {
       </WrapperButtons>
     </StyledMobileMenu>
   );
-}
+};
 
 export default MobileMenu;

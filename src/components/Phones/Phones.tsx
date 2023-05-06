@@ -1,4 +1,3 @@
-import React from "react";
 import { StyledPhones, StyledImg, StyledTitle, StyledDescription, StyledTextWrapper } from "./StyledPhone";
 import phones from "../../images/illustration-phones.svg";
 

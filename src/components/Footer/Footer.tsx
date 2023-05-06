@@ -1,7 +1,6 @@
 import { StyledLogo } from "../Header/StyledHeader";
-import logo from "./logo.svg";
-
 import { StyledFooter, StyledFooterNav, StyledList } from "./StyledFooter";
+import logo from "../../images/logo.svg";
 
 const Footer: React.FC = () => {
   return (
@@ -40,6 +39,6 @@ const Footer: React.FC = () => {
       </StyledFooterNav>
     </StyledFooter>
   );
-}
+};
 
 export default Footer;

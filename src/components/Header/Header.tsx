@@ -1,8 +1,6 @@
-import logo from "./logo.svg";
-import hamburger from "./icon-hamburger.svg";
-import iconClose from "./icon-close.svg";
-import angleDown from "../../images/angle-down.svg";
 import { useState } from "react";
+import TabletMenu from "./TabletMenu/TabletMenu";
+import MobileMenu from "./MobileMenu/MobileMenu";
 import {
   HamburgerIcon,
   StyledButtonTransparent,
@@ -20,8 +18,10 @@ import {
   StyledLoginBox,
   StyledButtonBox,
 } from "./StyledHeader";
-import TabletMenu from "./TabletMenu/TabletMenu";
-import MobileMenu from "./MobileMenu/MobileMenu";
+import logo from "../../images/logo.svg";
+import hamburger from "../../images/icon-hamburger.svg";
+import iconClose from "../../images/icon-close.svg";
+import angleDown from "../../images/angle-down.svg";
 
 const Header: React.FC = () => {
   const [isTabletMenuActive, setIsTabletMenuActive] = useState<boolean>(false);
